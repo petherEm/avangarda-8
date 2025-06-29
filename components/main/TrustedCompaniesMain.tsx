@@ -74,6 +74,16 @@ export default function TrustedCompaniesMain({
       logo: "/firm-testimonials/awf.png",
       alt: "AWF logo",
     },
+    {
+      name: "JYSK",
+      logo: "/firm-testimonials/jysk.webp",
+      alt: "JYSK logo",
+    },
+    {
+      name: "BS Wasewo",
+      logo: "/firm-testimonials/BS_Wasewo.png",
+      alt: "BS Wasewo logo",
+    },
   ];
 
   // Split companies into two rows

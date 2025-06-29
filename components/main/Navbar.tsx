@@ -104,7 +104,6 @@ export function Navbar({ lang, dict }: NavbarProps) {
       getTranslatedSlug(segment, lang as "pl" | "en")
     );
     const localizedHref = `/${lang}/${translatedSegments.join("/")}`;
-
     return (
       pathname === localizedHref || pathname.startsWith(`${localizedHref}/`)
     );
@@ -354,9 +353,9 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 </Link>
               </div>
 
-              {/* Second row: Navigation */}
-              <div className="flex items-center justify-center py-2">
-                <nav className="flex items-center justify-center gap-3 xl:gap-6">
+              {/* Second row: Navigation + Kup Voucher */}
+              <div className="flex items-center justify-between py-2">
+                <nav className="flex items-center justify-center gap-3 xl:gap-6 flex-1">
                   {MenuListing.map((item) => (
                     <Link
                       key={item.nameKey}
@@ -371,6 +370,17 @@ export function Navbar({ lang, dict }: NavbarProps) {
                     </Link>
                   ))}
                 </nav>
+
+                {/* Kup Voucher button moved to far right */}
+                <Link href={getLocalizedHref("/pakiety")}>
+                  <Button
+                    size="sm"
+                    className="bg-avangarda font-alata px-3 py-1.5 text-sm text-white hover:bg-avangarda/90 transition-colors duration-300"
+                  >
+                    <GiftIcon className="h-4 w-4 mr-2" />
+                    Kup Voucher
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -508,7 +518,6 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 priority
               />
             </Link>
-
             <nav className="hidden w-full xl:flex absolute -bottom-10 left-0 flex-row justify-center gap-2 xl:gap-6 overflow-x-auto">
               {MenuListing.map((item) => (
                 <Link

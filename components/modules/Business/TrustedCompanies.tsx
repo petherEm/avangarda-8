@@ -74,11 +74,21 @@ export default function TrustedCompanies({
       logo: "/firm-testimonials/awf.png",
       alt: "AWF logo",
     },
+    {
+      name: "JYSK",
+      logo: "/firm-testimonials/jysk.png",
+      alt: "JYSK logo",
+    },
+    {
+      name: "BS Wasewo",
+      logo: "/firm-testimonials/BS_Wasewo.png",
+      alt: "BS Wasewo logo",
+    },
   ];
 
   // Split companies into two rows
-  const firstRow = companies.slice(0, 6);
-  const secondRow = companies.slice(6, 12);
+  const firstRow = companies.slice(0, 8);
+  const secondRow = companies.slice(8, 16);
 
   return (
     <div className="bg-white w-full text-primary py-16 lg:py-20">
