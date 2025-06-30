@@ -37,7 +37,7 @@ const About = ({ dict, lang }: AboutProps) => {
 
   return (
     <>
-      <div className="mt-20 max-w-7xl mx-auto px-4">
+      <div className="mt-10 md:mt-20 max-w-7xl mx-auto px-4">
         {/* Header Section with Images */}
         <div className="mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">

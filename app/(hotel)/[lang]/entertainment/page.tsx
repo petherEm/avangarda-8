@@ -1,4 +1,3 @@
-import AnimateOnScroll from "@/components/animate-on-scroll";
 import ClubCoola from "@/components/modules/Entertainment/ClubCoola";
 import EntertainmentHero from "@/components/modules/Entertainment/EntertainmentHero";
 import EntertainmentIntro from "@/components/modules/Entertainment/EntertainmentIntro";
@@ -15,14 +14,8 @@ export default async function EntertainmentMainPage({
   return (
     <>
       <EntertainmentHero />
-
-      <AnimateOnScroll>
-        <EntertainmentIntro dict={dict} lang={lang} />
-      </AnimateOnScroll>
-
-      <AnimateOnScroll>
-        <ClubCoola />
-      </AnimateOnScroll>
+      <EntertainmentIntro dict={dict} lang={lang} />
+      <ClubCoola />
     </>
   );
 }

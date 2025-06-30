@@ -38,6 +38,21 @@ export async function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Hotel Avangarda*** v8",
   description: "Hotel Avangarda - Różan",
+  manifest: "/manifest.json",
+  icons: {
+    icon: "/icon1.png",
+    apple: "/apple-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Hotel Avangarda",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default async function RootLayout({

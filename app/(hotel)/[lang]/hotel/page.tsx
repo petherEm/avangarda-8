@@ -21,15 +21,10 @@ export default async function HotelMain({
     <>
       {/* <HeroImage image="/hotel-hero-2.jpg" title={title} /> */}
       <HotelHero />
-
       <HotelIntro dict={dict} lang={lang} />
-
       <Testimonials lang={lang} dict={dict} />
-
       <RoomsIntro dict={dict} lang={lang} />
-
       <StayBenefits dict={dict} lang={lang} />
-
       <KeyAmenities dict={dict} lang={lang} />
     </>
   );

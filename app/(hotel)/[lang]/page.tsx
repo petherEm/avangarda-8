@@ -23,9 +23,7 @@ export default async function Home({
       {/* Example content to enable scrolling */}
       <Hero />
 
-      <AnimateOnScroll>
-        <Offers dict={dict} offers={offers} lang={lang} />
-      </AnimateOnScroll>
+      <Offers dict={dict} offers={offers} lang={lang} />
 
       <AnimateOnScroll>
         <Business lang={lang} dict={dict} />

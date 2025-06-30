@@ -119,7 +119,7 @@ const Offers = ({ dict, lang, offers }: OffersProps) => {
   };
 
   return (
-    <div className="py-24 mt-6 w-full text-primary">
+    <div className="md:py-20 lg:py-26 mt-6 w-full text-primary">
       {/* Mobile Layout - Stacked */}
       <div className="block lg:hidden">
         <Container className="py-8">

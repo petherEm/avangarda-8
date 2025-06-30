@@ -7,7 +7,7 @@ const VideoPlayer = lazy(() => import("./video-player"));
 
 export default function HotelHero() {
   return (
-    <Container className="relative h-[70vh] md:h-screen w-full overflow-hidden">
+    <Container className="relative h-[60vh] md:h-screen w-full overflow-hidden">
       <Suspense fallback={<HeroLoading />}>
         <VideoPlayer />
       </Suspense>

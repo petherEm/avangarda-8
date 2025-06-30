@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import type React from "react";
+
+import { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/container";
@@ -55,7 +57,7 @@ const getNestedValue = (obj: any, path: string) => {
   return path.split(".").reduce((acc, part) => acc && acc[part], obj);
 };
 
-// Modern Image Slider Component
+// Modern Image Slider Component with Swipe Support
 function ModernImageSlider({
   images,
   roomName,
@@ -66,25 +68,67 @@ function ModernImageSlider({
   onImageClick: (index: number) => void;
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   const nextImage = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev + 1) % images.length);
+    setTimeout(() => setIsTransitioning(false), 300);
   };
 
   const prevImage = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+    setTimeout(() => setIsTransitioning(false), 300);
+  };
+
+  // Touch event handlers for swipe functionality
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.targetTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+
+    const distance = touchStartX.current - touchEndX.current;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe && images.length > 1) {
+      nextImage();
+    }
+    if (isRightSwipe && images.length > 1) {
+      prevImage();
+    }
+
+    // Reset touch positions
+    touchStartX.current = 0;
+    touchEndX.current = 0;
   };
 
   return (
     <div className="relative h-[300px] md:h-[350px] overflow-hidden group">
       {/* Main Image */}
       <motion.div
+        ref={sliderRef}
         key={currentIndex}
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="relative w-full h-full cursor-pointer"
-        onClick={() => onImageClick(currentIndex)}
+        className="relative w-full h-full select-none"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        style={{ touchAction: "pan-y pinch-zoom" }} // Allow vertical scroll but handle horizontal swipes
       >
         <Image
           src={images[currentIndex] || "/placeholder.svg"}
@@ -93,17 +137,26 @@ function ModernImageSlider({
           className="object-cover transition-transform duration-700 hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           quality={95}
+          draggable={false}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+        {/* Swipe indicator for mobile */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 md:hidden transition-opacity duration-300">
+          <div className="bg-black/50 backdrop-blur-sm text-white text-xs px-3 py-1 rounded-full">
+            Swipe to browse
+          </div>
+        </div>
       </motion.div>
 
-      {/* Navigation Arrows */}
-      <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      {/* Navigation Arrows - Hidden on mobile, shown on desktop */}
+      <div className="absolute inset-0 items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={prevImage}
-          className="bg-white/90 backdrop-blur-sm rounded-full p-2 text-gray-800 hover:bg-white shadow-lg"
+          disabled={isTransitioning}
+          className="bg-white/90 backdrop-blur-sm rounded-full p-2 text-gray-800 hover:bg-white shadow-lg disabled:opacity-50"
         >
           <ChevronLeft className="h-5 w-5" />
         </motion.button>
@@ -111,7 +164,8 @@ function ModernImageSlider({
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={nextImage}
-          className="bg-white/90 backdrop-blur-sm rounded-full p-2 text-gray-800 hover:bg-white shadow-lg"
+          disabled={isTransitioning}
+          className="bg-white/90 backdrop-blur-sm rounded-full p-2 text-gray-800 hover:bg-white shadow-lg disabled:opacity-50"
         >
           <ChevronRight className="h-5 w-5" />
         </motion.button>
@@ -122,7 +176,14 @@ function ModernImageSlider({
         {images.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentIndex(index)}
+            onClick={() => {
+              if (!isTransitioning) {
+                setIsTransitioning(true);
+                setCurrentIndex(index);
+                setTimeout(() => setIsTransitioning(false), 300);
+              }
+            }}
+            disabled={isTransitioning}
             className={`w-2 h-2 rounded-full transition-all duration-300 ${
               index === currentIndex
                 ? "bg-white scale-125"
@@ -414,7 +475,6 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
             >
               {t("rooms.description")}
             </motion.p>
-
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

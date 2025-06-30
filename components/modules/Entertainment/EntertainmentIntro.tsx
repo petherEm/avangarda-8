@@ -60,7 +60,7 @@ export default function OutdoorEntertainment({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary mb-8"
+              className="title-light"
             >
               Zdrowie i Aktywność
             </motion.h1>
@@ -70,7 +70,7 @@ export default function OutdoorEntertainment({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Różan położony jest na wysokiej skarpie, którą opływa rzeka Narew
               i dopływ Różanica. Oferujemy aktywny wypoczynek na świeżym
@@ -139,7 +139,7 @@ export default function OutdoorEntertainment({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Aktywności
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>
@@ -171,7 +171,7 @@ export default function OutdoorEntertainment({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary mb-8"
+              className="title-light"
             >
               Gry w Klubie Coola
             </motion.h1>
@@ -181,7 +181,7 @@ export default function OutdoorEntertainment({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Klub Coola to miejsce, gdzie można aktywnie spędzić czas grając w
               bilard, rzutki czy cymbergaj. Idealne miejsce na wieczorne
@@ -260,7 +260,7 @@ export default function OutdoorEntertainment({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Klubu Coola
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>
@@ -309,7 +309,7 @@ export default function OutdoorEntertainment({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary mb-8"
+              className="title-light"
             >
               Atrakcje dla Dzieci
             </motion.h1>
@@ -319,7 +319,7 @@ export default function OutdoorEntertainment({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Nasze otoczenie oferuje wiele atrakcji dla najmłodszych gości.
               Dzieci mogą cieszyć się bezpieczną zabawą na świeżym powietrzu i
@@ -389,7 +389,7 @@ export default function OutdoorEntertainment({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Atrakcji dla Dzieci
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>
@@ -421,7 +421,7 @@ export default function OutdoorEntertainment({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary mb-8"
+              className="title-light"
             >
               Basen
             </motion.h1>
@@ -431,7 +431,7 @@ export default function OutdoorEntertainment({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Zapraszamy do naszego krytego basenu z podgrzewaną wodą i biczami
               wodnymi. Idealne miejsce na relaks i rekreację dla całej rodziny.
@@ -514,7 +514,7 @@ export default function OutdoorEntertainment({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Basenu
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>
@@ -563,7 +563,7 @@ export default function OutdoorEntertainment({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary mb-8"
+              className="title-light"
             >
               Fort no.5 Grillowisko
             </motion.h1>
@@ -573,7 +573,7 @@ export default function OutdoorEntertainment({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Fort no.5 to wyjątkowe miejsce na organizację grillowania i
               spotkań plenerowych. Historyczne miejsce z nowoczesnymi
@@ -639,7 +639,7 @@ export default function OutdoorEntertainment({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Fort no.5
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>

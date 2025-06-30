@@ -17,7 +17,7 @@ export default function ClubCoola() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-8"
+              className="title-light"
             >
               Klub Coola
             </motion.h1>

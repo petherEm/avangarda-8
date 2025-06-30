@@ -83,7 +83,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary"
+                  className="title-light"
                 >
                   Spa & Wellness
                 </motion.h1>
@@ -92,9 +92,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
-                >
-                  <Sparkles className="h-12 w-12 text-avangarda hidden sm:block" />
-                </motion.div>
+                ></motion.div>
               </div>
 
               <motion.p
@@ -102,7 +100,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed mb-6 text-slate-600"
+                className="main-paragraph-light"
               >
                 Zapraszamy do strefy Spa & Wellness, gdzie profesjonalne zabiegi
                 kosmetyczne spotykają się z relaksem. Oferujemy szeroki wybór
@@ -228,7 +226,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 Opinie Gości
               </h2>
             </div>
-            <p className="text-center max-w-3xl mx-auto mb-12 text-lg leading-relaxed text-slate-600">
+            <p className="main-paragraph-light mb-8 text-center max-w-2xl mx-auto">
               Poznaj opinie naszych gości o relaksujących chwilach spędzonych w
               Spa & Wellness Avangarda
             </p>
@@ -302,7 +300,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary"
+                  className="title-light"
                 >
                   Basen
                 </motion.h1>
@@ -313,7 +311,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed mb-6 text-slate-600"
+                className="main-paragraph-light"
               >
                 Zapraszamy do naszego krytego basenu z podgrzewaną wodą. Idealne
                 miejsce na relaks i rekreację dla całej rodziny. Basen
@@ -379,7 +377,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <div className="flex items-center justify-center gap-3 mb-8">
               <div className="h-px flex-1 bg-avangarda"></div>
               <h2 className="text-2xl font-semibold text-center text-primary">
-                Galeria Basenu
+                Zapraszamy
               </h2>
               <div className="h-px flex-1 bg-avangarda"></div>
             </div>
@@ -434,7 +432,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-white"
+                  className="title-dark"
                 >
                   Grota Solna
                 </motion.h1>
@@ -445,7 +443,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed mb-6 text-gray-200"
+                className="main-paragraph-dark"
               >
                 Nasza grota solna to naturalne środowisko terapeutyczne, które
                 wspomaga leczenie chorób układu oddechowego, wzmacnia odporność
@@ -459,12 +457,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
                 className="flex flex-wrap gap-4 mb-8"
-              >
-                <Button className="bg-avangarda hover:bg-avangarda/90 flex items-center gap-2">
-                  <Calendar className="h-4 w-4" />
-                  Zarezerwuj sesję
-                </Button>
-              </motion.div>
+              ></motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -514,7 +507,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <div className="flex items-center justify-center gap-3 mb-8">
               <div className="h-px flex-1 bg-avangarda"></div>
               <h2 className="text-2xl font-semibold text-center text-primary">
-                Galeria Groty Solnej
+                Zapraszamy
               </h2>
               <div className="h-px flex-1 bg-avangarda"></div>
             </div>
@@ -552,7 +545,6 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 alt="Siłownia Matrix Avangarda"
                 fill
                 className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 quality={100}
               />
             </motion.div>
@@ -564,18 +556,10 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary"
+                  className="title-light"
                 >
-                  Siłownia Matrix
+                  Siłownia & Fitness
                 </motion.h1>
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
-                >
-                  <Dumbbell className="h-12 w-12 text-avangarda hidden sm:block" />
-                </motion.div>
               </div>
 
               <motion.p
@@ -583,7 +567,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed mb-6 text-slate-600"
+                className="main-paragraph-light"
               >
                 Nowoczesna siłownia wyposażona w profesjonalny sprzęt firmy
                 Matrix. Oferujemy pełen zakres urządzeń cardio i siłowych dla
@@ -596,12 +580,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
                 className="flex flex-wrap gap-4 mb-8"
-              >
-                <Button className="bg-avangarda hover:bg-avangarda/90 flex items-center gap-2">
-                  <Dumbbell className="h-4 w-4" />
-                  Sprawdź sprzęt
-                </Button>
-              </motion.div>
+              ></motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -651,7 +630,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <div className="flex items-center justify-center gap-3 mb-8">
               <div className="h-px flex-1 bg-avangarda"></div>
               <h2 className="text-2xl font-semibold text-center text-primary">
-                Galeria Siłowni
+                Zapraszamy
               </h2>
               <div className="h-px flex-1 bg-avangarda"></div>
             </div>

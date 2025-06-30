@@ -43,7 +43,7 @@ const Weddings = ({ lang = "pl", dict }: WeddingsProps) => {
           <motion.h1
             variants={fadeInUp}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="title-dark"
+            className="title-dark max-w-2xl"
           >
             Uroczystości na każdą okazję
           </motion.h1>
@@ -51,7 +51,7 @@ const Weddings = ({ lang = "pl", dict }: WeddingsProps) => {
             <motion.p
               variants={fadeInUp}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="main-paragraph-dark"
+              className="main-paragraph-dark max-w-2xl"
             >
               Zorganizuj niezapomniane chwile w wyjątkowej atmosferze! Oferujemy
               profesjonalną obsługę i przestrzenie idealne na wesela, komunie,
