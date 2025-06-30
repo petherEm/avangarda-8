@@ -22,28 +22,13 @@ export default async function GastroMainPage({
     <>
       <GastroHero />
 
-      <AnimateOnScroll>
-        <GastroIntro dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      <GastroIntro dict={dict} lang={lang} />
 
-      <AnimateOnScroll>
-        <GastroRest dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      <GastroRest dict={dict} lang={lang} />
 
-      <AnimateOnScroll>
-        {" "}
-        <GastroClub dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      <GastroClub dict={dict} lang={lang} />
 
-      <AnimateOnScroll>
-        {" "}
-        <GastroPort2 dict={dict} lang={lang} />
-      </AnimateOnScroll>
-
-      <AnimateOnScroll>
-        {" "}
-        <GastroCTA dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      <GastroPort2 dict={dict} lang={lang} />
     </>
   );
 }

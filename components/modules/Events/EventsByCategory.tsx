@@ -178,7 +178,7 @@ export default function EventTypes({ dict, lang = "pl" }: EventTypesProps) {
   ];
 
   return (
-    <div className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
+    <div className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-14">
       <div className="max-w-7xl mx-auto sm:px-4">
         {/* Event Types Sections */}
         <div className="space-y-20 px-4 sm:px-0">
@@ -219,14 +219,10 @@ export default function EventTypes({ dict, lang = "pl" }: EventTypesProps) {
                     <div className="flex-1">
                       <AnimatedDecorativeBar />
                       <div className="flex items-center gap-2 mb-2">
-                        <h1 className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-8">
-                          {event.title}
-                        </h1>
+                        <h1 className="title-light">{event.title}</h1>
                       </div>
-                      <p className="text-lg text-gray-600 mb-4">
-                        {event.subtitle}
-                      </p>
-                      <p className="text-lg leading-relaxed">
+
+                      <p className="main-paragraph-light mb-1">
                         {event.description}
                       </p>
                     </div>

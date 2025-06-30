@@ -3,15 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Facebook,
-  Gift,
-  GiftIcon,
-  Instagram,
-  Menu,
-  X,
-  Phone,
-} from "lucide-react";
+import { Facebook, Gift, GiftIcon, Instagram, X, Phone } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
@@ -24,6 +16,29 @@ import {
 } from "@/components/ui/sheet";
 import { LanguageSwitcher } from "@/components/language-swticher";
 import { getTranslatedSlug } from "@/lib/slug-mapping";
+
+// Custom Hamburger Menu Component with varying line lengths
+const HamburgerMenu = ({ isHovered }: { isHovered: boolean }) => {
+  return (
+    <div className="flex flex-col justify-center items-end w-8 h-8 space-y-1.5">
+      <div
+        className={`h-0.5 bg-white rounded-full transition-all duration-300 ease-in-out ${
+          isHovered ? "w-7 bg-avangarda" : "w-7"
+        }`}
+      />
+      <div
+        className={`h-0.5 bg-white rounded-full transition-all duration-300 ease-in-out ${
+          isHovered ? "w-7 bg-avangarda" : "w-5"
+        }`}
+      />
+      <div
+        className={`h-0.5 bg-white rounded-full transition-all duration-300 ease-in-out ${
+          isHovered ? "w-7 bg-avangarda" : "w-4"
+        }`}
+      />
+    </div>
+  );
+};
 
 interface MenuItemType {
   nameKey: string;
@@ -55,6 +70,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
   const [isHovered, setIsHovered] = React.useState(false);
   const [isSheetOpen, setIsSheetOpen] = React.useState(false);
   const [menuItemsVisible, setMenuItemsVisible] = React.useState(false);
+  const [hamburgerHovered, setHamburgerHovered] = React.useState(false);
   const navRef = React.useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
@@ -121,15 +137,15 @@ export function Navbar({ lang, dict }: NavbarProps) {
 
   const MobileMenuContent = () => (
     <div className="flex flex-col h-full relative overflow-hidden">
-      {/* Custom close button */}
+      {/* Custom close button - made bigger */}
       <div className="absolute top-4 right-4 z-10">
         <Button
           variant="ghost"
           size="icon"
           onClick={() => setIsSheetOpen(false)}
-          className="text-white hover:bg-white/10 rounded-full h-8 w-8 transition-all duration-300 hover:rotate-90"
+          className="text-white hover:bg-white/10 rounded-full h-10 w-10 transition-all duration-300 hover:rotate-90 hover:scale-110"
         >
-          <X className="h-5 w-5" />
+          <X className="h-6 w-6" />
         </Button>
       </div>
 
@@ -314,7 +330,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
               <div className="flex items-center justify-end gap-2 sm:gap-4 py-2">
                 <Button
                   size="sm"
-                  className="bg-transparent font-alata px-2 text-xs text-white hover:text-avangarda sm:px-4 sm:text-sm transition-colors duration-300"
+                  className="bg-transparent shadow-none font-alata px-2 text-xs text-white hover:text-avangarda sm:px-4 sm:text-sm transition-colors duration-300"
                 >
                   <Phone className="h-2 w-2 sm:h-3 sm:w-3" />
                   <span className="ml-1 text-[14px]">{dict.nav.phone}</span>
@@ -386,7 +402,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
 
             {/* Mobile/Tablet layout when scrolled */}
             <div
-              className={`xl:hidden flex items-center justify-between ${isScrolled && "py-2"}`}
+              className={`xl:hidden flex items-center justify-between ${isScrolled && "py-1"}`}
             >
               {/* Mobile logo when scrolled */}
               <Link href={getLocalizedHref("/")} className="flex-shrink-0">
@@ -395,43 +411,42 @@ export function Navbar({ lang, dict }: NavbarProps) {
                   alt="Hotel Avangarda"
                   width={110}
                   height={88}
-                  className="h-auto w-[90px] transition-opacity duration-500 sm:w-[100px]"
+                  className="h-auto w-[110px] transition-opacity duration-500 sm:w-[120px]"
                   quality={100}
                   priority
                 />
               </Link>
 
               {/* Right side buttons */}
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <Button
-                  size="sm"
-                  className="bg-avangarda font-alata px-3 py-2 text-xs text-white hover:bg-avangarda/90 sm:px-4 sm:text-sm transition-colors duration-300"
+                  variant="fillRight"
+                  className="border-none font-alata px-4 py-2.5"
                 >
-                  <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
-                  <span className="ml-1 sm:ml-2">{dict.nav.phone}</span>
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="ml-2">{dict.nav.phone}</span>
                 </Button>
 
                 <Link href={getLocalizedHref("/pakiety")}>
-                  <Button
-                    size="sm"
-                    className="bg-avangarda font-alata px-2 py-1 text-xs text-white hover:bg-avangarda/90 xl:px-4 xl:text-sm flex transition-colors duration-300"
-                  >
-                    <GiftIcon className="h-3 w-3 xl:h-4 xl:w-4" />
-                    <span className="hidden sm:inline xl:inline">
+                  <Button className="bg-avangarda font-alata px-3 py-2.5 text-sm text-white hover:bg-avangarda/90 xl:px-5 xl:text-base flex transition-colors duration-300">
+                    <GiftIcon className="h-4 w-4 xl:h-5 xl:w-5" />
+                    <span className="hidden sm:inline xl:inline ml-2">
                       Kup Voucher
                     </span>
                   </Button>
                 </Link>
 
-                {/* Enhanced mobile menu trigger */}
+                {/* Enhanced mobile menu trigger with custom hamburger */}
                 <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                   <SheetTrigger asChild>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="text-white p-4 hover:bg-white/10 rounded-full transition-all duration-300 transform hover:scale-110 h-14 w-14"
+                      className="text-white p-5 hover:bg-white/10 rounded-full transition-all duration-300 transform hover:scale-110 h-16 w-16"
+                      onMouseEnter={() => setHamburgerHovered(true)}
+                      onMouseLeave={() => setHamburgerHovered(false)}
                     >
-                      <Menu className="h-8 w-8" />
+                      <HamburgerMenu isHovered={hamburgerHovered} />
                     </Button>
                   </SheetTrigger>
                   <SheetContent
@@ -480,14 +495,17 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 Kup Voucher
               </Button>
             </Link>
+
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
                   className="xl:hidden text-white p-4 hover:bg-white/10 rounded-full transition-all duration-300 transform hover:scale-110 h-14 w-14"
+                  onMouseEnter={() => setHamburgerHovered(true)}
+                  onMouseLeave={() => setHamburgerHovered(false)}
                 >
-                  <Menu className="h-8 w-8" />
+                  <HamburgerMenu isHovered={hamburgerHovered} />
                 </Button>
               </SheetTrigger>
               <SheetContent
@@ -518,6 +536,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
                 priority
               />
             </Link>
+
             <nav className="hidden w-full xl:flex absolute -bottom-10 left-0 flex-row justify-center gap-2 xl:gap-6 overflow-x-auto">
               {MenuListing.map((item) => (
                 <Link

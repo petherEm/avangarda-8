@@ -53,7 +53,7 @@ export default function RestaurantFort() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-white"
+                className="title-dark"
               >
                 Klub Coola
               </motion.h1>
@@ -78,7 +78,7 @@ export default function RestaurantFort() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-white/90"
+              className="main-paragraph-dark"
             >
               Zapraszamy do Club Coola, gdzie tradycyjna kuchnia polska spotyka
               się z nowoczesnymi smakami. Nasza restauracja oferuje wyjątkowe
@@ -98,10 +98,7 @@ export default function RestaurantFort() {
                 <Utensils className="h-4 w-4" />
                 Zobacz Menu
               </Button>
-              <Button
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 flex items-center gap-2"
-              >
+              <Button variant="fillRight" className="w-fit border-none">
                 <Calendar className="h-4 w-4" />
                 Zarezerwuj stolik
               </Button>
@@ -172,7 +169,7 @@ export default function RestaurantFort() {
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-white">
-              Galeria Smaków
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>

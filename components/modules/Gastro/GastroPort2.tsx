@@ -64,7 +64,7 @@ export default function GastroBarPrzystan() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary"
+                className="title-light"
               >
                 Bar Przystań Avangarda
               </motion.h1>
@@ -88,7 +88,7 @@ export default function GastroBarPrzystan() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Zapraszamy do Bar Przystań Avangarda, gdzie świeże ryby z Narwi
               spotykają się z tradycyjną kuchnią grillową. Nasza przystań
@@ -154,7 +154,7 @@ export default function GastroBarPrzystan() {
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Przystani
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>

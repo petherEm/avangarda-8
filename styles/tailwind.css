@@ -69,6 +69,35 @@
   font-family: var(--font-geist-mono);
 }
 
+/* Custom title utility */
+@utility title-light {
+  @apply text-primary text-4xl sm:text-4xl md:text-5xl xl:text-6xl font-alata font-semibold uppercase tracking-wider mb-4 md:mb-6;
+}
+
+@utility title-dark {
+  @apply text-white text-4xl sm:text-4xl md:text-5xl xl:text-6xl font-alata font-semibold uppercase tracking-wider mb-4 md:mb-6;
+}
+
+@utility subtitle-light {
+  @apply  text-primary text-4xl mb-12 text-center font-semibold tracking-wider; 
+}
+
+@utility subtitle-dark {
+  @apply text-white text-4xl mb-12 text-center font-semibold tracking-wider;
+}
+
+@utility main-paragraph-light {
+  @apply text-lg text-primary mb-8 leading-relaxed;
+}
+
+@utility main-paragraph-dark {
+  @apply text-lg text-white mb-8 leading-relaxed;
+}
+
+
+
+
+
 @layer base {
   body {
     @apply bg-white text-black font-raleway;

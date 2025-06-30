@@ -75,19 +75,19 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
             >
               <AnimatedDecorativeBar />
 
-              <motion.h2
+              <motion.h1
                 variants={fadeInUp}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="!text-white text-2xl sm:text-3xl md:text-4xl font-alata font-semibold uppercase tracking-wider mb-4 leading-tight"
+                className="title-dark"
               >
                 Spotkania firmowe, Integracje & Business Spa
-              </motion.h2>
+              </motion.h1>
 
               <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Hotel Avangarda oferuje nowoczesne sale konferencyjne idealne
                   na spotkania biznesowe, szkolenia i eventy firmowe. Zapewniamy
@@ -98,7 +98,7 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Po intensywnym dniu pracy zapraszamy do naszej strefy SPA,
                   gdzie Goście mogą zrelaksować się w saunie, jacuzzi lub
@@ -108,7 +108,7 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Organizujemy również wieczory integracyjne i programy team
                   buildingowe – które sprzyjają budowaniu relacji i wspólnej

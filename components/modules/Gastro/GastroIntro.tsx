@@ -81,10 +81,8 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
             className="text-center"
           >
             <AnimatedDecorativeBar className="w-20 h-2 bg-avangarda mb-4 mx-auto" />
-            <h1 className="uppercase text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wider mb-4 text-gray-800">
-              Pyszna Avangarda
-            </h1>
-            <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto text-gray-600">
+            <h1 className="title-light">Pyszna Avangarda</h1>
+            <p className="main-paragraph-light max-w-3xl mx-auto mt-4">
               Hotel Avangarda oferuje trzy wyjątkowe miejsca gastronomiczne - od
               eleganckiej restauracji, przez rozrywkowy klub, po klimatyczny bar
               nad rzeką.
@@ -94,7 +92,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
       </div>
 
       {/* Three Places Section - Dark Background */}
-      <div className="text-white w-full py-12 md:py-28 relative">
+      <div className="text-white w-full py-18 md:py-28 relative">
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <BackgroundLogoBottomDark position="right" />
@@ -151,7 +149,10 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
                     </div>
 
                     <Link href={place.link}>
-                      <Button className="w-full bg-avangarda hover:bg-avangarda/90 text-white transition-all hover:scale-105 active:scale-95 text-sm py-2">
+                      <Button
+                        variant="fillRight"
+                        className="w-full border-none"
+                      >
                         Zobacz menu
                         <Utensils className="ml-2 h-3 w-3" />
                       </Button>

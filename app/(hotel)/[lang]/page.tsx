@@ -1,20 +1,13 @@
-import About from "@/components/main/About";
 import Business from "@/components/main/Business";
-
-import Entertainment from "@/components/main/Entertainment";
 import Hero from "@/components/modules/Hero/Hero";
 import Offers from "@/components/main/Offers";
-import Restaurant from "@/components/main/Restaurant";
-
 import Spa from "@/components/main/Spa";
 import Weddings from "@/components/main/Weddings";
 import { getDictionary } from "@/lib/dictionary";
 import { getAllOffers } from "@/sanity/lib/offers/getOffers";
 import AnimateOnScroll from "@/components/animate-on-scroll";
-import Rooms from "@/components/main/Rooms";
 import CTAgeneric from "@/components/main/CTAgeneric";
 import RestaurantNew from "@/components/main/RestaurantNew";
-import TrustedCompanies from "@/components/modules/Business/TrustedCompanies";
 import TrustedCompaniesMain from "@/components/main/TrustedCompaniesMain";
 
 export default async function Home({

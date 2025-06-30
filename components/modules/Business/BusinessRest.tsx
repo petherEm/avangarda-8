@@ -63,22 +63,20 @@ export default function BusinessEntertainment({
             transition={{ duration: 0.5 }}
           >
             <AnimatedDecorativeBar />
-            <h1 className="text-4xl text-left font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6">
-              Team Building
-            </h1>
+            <h1 className="title-light">Team Building</h1>
 
-            <p className="text-lg leading-relaxed mb-6">
+            <p className="main-paragraph-light">
               Po intensywnym dniu pełnym spotkań i prezentacji, zapraszamy do
               strefy relaksu Hotel Avangarda. Oferujemy szeroki wybór możliwości
               odpoczynku - od relaksujących zabiegów spa po rozrywkę w Klubie
               Coola.
             </p>
-            <p className="text-lg leading-relaxed mb-8">
+            <p className="main-paragraph-light">
               Nasi goście biznesowi mogą korzystać ze specjalnych pakietów
               łączących konferencje z wellness, zapewniając idealną równowagę
               między pracą a odpoczynkiem.
             </p>
-            <p className="text-lg leading-relaxed mb-8">
+            <p className="main-paragraph-light">
               Nasi goście biznesowi mogą korzystać ze specjalnych pakietów
               łączących konferencje z wellness, zapewniając idealną równowagę
               między pracą a odpoczynkiem.
@@ -135,7 +133,7 @@ export default function BusinessEntertainment({
                         Rozrywka & Relaks
                       </Badge>
                     </div>
-                    <p className="text-lg leading-relaxed">
+                    <p className="main-paragraph-light">
                       Po dniu pełnym spotkań biznesowych zapraszamy do Klubu
                       Coola - miejsca, gdzie można się zrelaksować przy
                       kręglach, bilardzie czy dartsach. Idealne na nieformalne
@@ -246,7 +244,7 @@ export default function BusinessEntertainment({
                         Rekreacja
                       </Badge>
                     </div>
-                    <p className="text-lg leading-relaxed">
+                    <p className="main-paragraph-light">
                       Uzupełnij swój pobyt biznesowy o aktywności na świeżym
                       powietrzu. Oferujemy szereg możliwości rekreacji, które
                       doskonale sprawdzą się jako przerwa od spotkań lub jako
@@ -366,7 +364,7 @@ export default function BusinessEntertainment({
                         Integracja & BBQ
                       </Badge>
                     </div>
-                    <p className="text-lg leading-relaxed">
+                    <p className="main-paragraph-light">
                       Fort No. 4 to wyjątkowe miejsce na organizację wydarzeń
                       integracyjnych dla zespołów biznesowych. Historyczna
                       atmosfera fortu tworzy niepowtarzalne tło dla spotkań, a
@@ -477,7 +475,7 @@ export default function BusinessEntertainment({
                         Fresh Food & River
                       </Badge>
                     </div>
-                    <p className="text-lg leading-relaxed">
+                    <p className="main-paragraph-light">
                       Bar Przystań to unikalne miejsce położone nad brzegiem
                       rzeki, gdzie świeże składniki spotykają się z malowniczym
                       widokiem na wodę. Idealne na biznesowe lunche, nieformalne

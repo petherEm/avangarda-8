@@ -82,7 +82,7 @@ const RestauracjaDzikaRoza = ({
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-primary"
+                className="title-light"
               >
                 Restauracja Dzika Róża
               </motion.h1>
@@ -107,7 +107,7 @@ const RestauracjaDzikaRoza = ({
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6 text-slate-600"
+              className="main-paragraph-light"
             >
               Zapraszamy do eleganckiej Restauracji Dzika Róża, gdzie tradycyjna
               kuchnia polska spotyka się z nowoczesnymi technikami kulinarnymi.
@@ -128,10 +128,7 @@ const RestauracjaDzikaRoza = ({
                   Zobacz Menu
                 </Button>
               </Link>
-              <Button
-                variant="outline"
-                className="border-slate-300 text-slate-700 hover:bg-slate-50 flex items-center gap-2 bg-transparent"
-              >
+              <Button variant="fillRight" className="w-fit">
                 <Calendar className="h-4 w-4" />
                 Zarezerwuj stolik
               </Button>
@@ -179,7 +176,7 @@ const RestauracjaDzikaRoza = ({
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-avangarda"></div>
             <h2 className="text-2xl font-semibold text-center text-primary">
-              Galeria Restauracji
+              Zapraszamy
             </h2>
             <div className="h-px flex-1 bg-avangarda"></div>
           </div>

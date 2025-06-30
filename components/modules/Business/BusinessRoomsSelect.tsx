@@ -216,10 +216,8 @@ export default function ConferenceRoomsComponent({
           className="text-center mb-12 md:mb-16"
         >
           <AnimatedDecorativeBar />
-          <h1 className="text-4xl text-left font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6">
-            Sale Konferencyjne
-          </h1>
-          <p className="text-left text-lg text-slate-600 max-w-3xl leading-relaxed">
+          <h1 className="title-light text-left">Sale Konferencyjne</h1>
+          <p className="main-paragraph-light text-left max-w-2xl">
             Hotel Avangarda*** oferuje wszechstronne sale konferencyjne, idealne
             na każde wydarzenie. Wszystkie sale wyposażone są standardowo w
             bezprzewodowy internet, ekran, projektor, nagłośnienie, mikrofon

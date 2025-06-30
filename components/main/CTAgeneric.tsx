@@ -40,12 +40,12 @@ const Entertainment = ({ lang = "pl", dict }: EntertainmentProps) => {
       <div className=" w-full py-8 md:py-12">
         {/* Content Container */}
         <div className="max-w-7xl mx-auto px-4 space-y-6 py-16">
-          <h1 className="uppercase text-4xl md:text-5xl text-center font-semibold tracking-wider text-avangarda">
+          <h1 className="title-light text-center text-avangarda">
             ZAREZERWUJ JUŻ DZIŚ!
           </h1>
 
           <div className="flex flex-col md:flex-row items-center text-center md:items-center justify-center gap-4 md:gap-8">
-            <p className="text-black text-base md:text-lg leading-relaxed md:w-2/3">
+            <p className="main-paragraph-light max-w-2xl">
               Odkryj szeroką gamę atrakcji i aktywności, które sprawią, że Twój
               pobyt będzie pełen niezapomnianych wrażeń. W Avangarda każdy
               znajdzie coś dla siebie.

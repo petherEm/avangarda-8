@@ -1,6 +1,4 @@
-import AnimateOnScroll from "@/components/animate-on-scroll";
 import GenericCTA from "@/components/generic-cta";
-import HeroImage from "@/components/hero-image";
 import EventsByCategory from "@/components/modules/Events/EventsByCategory";
 import EventsGallery from "@/components/modules/Events/EventsGallery";
 import EventsHero from "@/components/modules/Events/EventsHero";
@@ -15,19 +13,12 @@ export default async function EventsMainPage({
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "pl");
 
-  const title = lang === "pl" ? "Przyjęcia i wesela" : "Weddings and events";
-
   return (
     <>
       <EventsHero />
-      <AnimateOnScroll>
-        <EventsIntro dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      <EventsIntro dict={dict} lang={lang} />
       <EventsGallery dict={dict} lang={lang} />
-      <AnimateOnScroll>
-        <EventsByCategory dict={dict} lang={lang} />
-      </AnimateOnScroll>
-      {/* Contact Section */}
+      <EventsByCategory dict={dict} lang={lang} />
       <GenericCTA
         header="Skontaktuj się z nami"
         leadText="Masz pytania lub chcesz omówić szczegóły współpracy? Skontaktuj się z nami telefonicznie lub pobierz naszą szczegółową ofertę."

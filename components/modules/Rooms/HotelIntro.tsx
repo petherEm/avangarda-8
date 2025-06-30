@@ -48,7 +48,7 @@ const About = ({ dict, lang }: AboutProps) => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="uppercase text-4xl md:text-5xl font-semibold tracking-wider"
+                className="title-light"
               >
                 {dict.about.title}
               </motion.h1>
@@ -57,7 +57,7 @@ const About = ({ dict, lang }: AboutProps) => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed"
+                className="main-paragraph-light"
               >
                 {dict.about.description}
               </motion.p>
@@ -135,7 +135,7 @@ const About = ({ dict, lang }: AboutProps) => {
                       <TreePine className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-0.5">
+                      <h3 className="text-primary font-semibold text-lg mb-0.5">
                         Wyjątkowa lokalizacja
                       </h3>
                       <p className="text-gray-600 text-md">
@@ -151,7 +151,7 @@ const About = ({ dict, lang }: AboutProps) => {
                       <Waves className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-0.5">
+                      <h3 className="text-primary font-semibold text-lg mb-0.5">
                         Wellness i SPA
                       </h3>
                       <p className="text-gray-600 text-md">
@@ -167,7 +167,7 @@ const About = ({ dict, lang }: AboutProps) => {
                       <Utensils className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-0.5">
+                      <h3 className="text-primary font-semibold text-lg mb-0.5">
                         Wyjątkowa restauracja
                       </h3>
                       <p className="text-gray-600 text-md">
@@ -183,7 +183,7 @@ const About = ({ dict, lang }: AboutProps) => {
                       <CalendarHeart className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-0.5">
+                      <h3 className="text-primary font-semibold text-lg mb-0.5">
                         Przestrzeń eventowa
                       </h3>
                       <p className="text-gray-600 text-md">
@@ -199,7 +199,7 @@ const About = ({ dict, lang }: AboutProps) => {
                       <TreePine className="w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-0.5">
+                      <h3 className="text-primary font-semibold text-lg mb-0.5">
                         Wyjątkowa lokalizacja
                       </h3>
                       <p className="text-gray-600 text-md">

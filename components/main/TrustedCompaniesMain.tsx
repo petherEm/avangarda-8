@@ -103,9 +103,7 @@ export default function TrustedCompaniesMain({
         >
           <div className="flex flex-col items-center">
             <AnimatedDecorativeBar />
-            <h2 className="text-4xl font-alata md:text-5xl font-semibold uppercase tracking-wider ">
-              Zaufali Nam
-            </h2>
+            <h1 className="title-light">Zaufali Nam</h1>
           </div>
         </motion.div>
       </div>

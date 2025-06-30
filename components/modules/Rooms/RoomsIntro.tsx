@@ -401,7 +401,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl font-alata md:text-5xl font-semibold tracking-wider mb-8"
+              className="title-light"
             >
               {t("rooms.title")}
             </motion.h1>
@@ -410,7 +410,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed mb-6"
+              className="main-paragraph-light"
             >
               {t("rooms.description")}
             </motion.p>
@@ -421,9 +421,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <p className="text-lg leading-relaxed mb-4">
-                {t("rooms.everyRoomHas")}
-              </p>
+              <p className="main-paragraph-light">{t("rooms.everyRoomHas")}</p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { icon: Wind, text: t("rooms.roomAmenities.ac") },
@@ -462,7 +460,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl font-bold mb-12 text-center"
+            className="subtitle-light text-center mb-8"
           >
             {t("rooms.chooseRoom")}
           </motion.h2>

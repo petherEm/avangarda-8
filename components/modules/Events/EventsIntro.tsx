@@ -29,20 +29,20 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
           <div>
             <AnimatedDecorativeBar />
-            <motion.h2
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-4xl max-w-2xl font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6"
+              className="title-light"
             >
               {t("events.title")}
-            </motion.h2>
+            </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed"
+              className="main-paragraph-light"
             >
               {t("events.description")}
             </motion.p>
@@ -83,7 +83,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
             </h2>
           </div>
 
-          <p className="text-center leading-relaxed max-w-3xl mx-auto mb-12 text-lg">
+          <p className="main-paragraph-light text-center mb-8 max-w-3xl mx-auto">
             {t("events.venuesDescription")}
           </p>
 
@@ -117,7 +117,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                       <h3 className="text-2xl font-semibold mb-2">
                         {t(venue.nameKey)}
                       </h3>
-                      <p className="text-lg leading-relaxed">
+                      <p className="main-paragraph-light">
                         {t(`events.venues.${key}.description`)}
                       </p>
                     </div>

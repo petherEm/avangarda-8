@@ -193,19 +193,19 @@ const BusinessBanquets = ({
             >
               <AnimatedDecorativeBar />
 
-              <motion.h2
+              <motion.h1
                 variants={fadeInUp}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="!text-white text-2xl sm:text-3xl md:text-4xl font-alata font-semibold uppercase tracking-wider mb-4 leading-tight"
+                className="title-dark"
               >
                 Biznes & Bankiety
-              </motion.h2>
+              </motion.h1>
 
               <div className="space-y-3 sm:space-y-4 md:space-y-6">
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Hotel Avangarda*** to idealne miejsce na organizację wydarzeń
                   biznesowych najwyższej klasy. Nasze eleganckie sale
@@ -216,7 +216,7 @@ const BusinessBanquets = ({
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Oferujemy kompleksową obsługę konferencji, szkoleń,
                   prezentacji oraz uroczystych bankietów. Nasze doświadczenie i
@@ -226,22 +226,12 @@ const BusinessBanquets = ({
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Dysponujemy nowoczesnymi salami o różnej pojemności - od
                   kameralnych spotkań zarządu po duże konferencje dla 540 osób.
                   Każda sala wyposażona jest w profesjonalny sprzęt
                   audiowizualny, bezprzewodowy internet oraz klimatyzację.
-                </motion.p>
-
-                <motion.p
-                  variants={fadeInUp}
-                  transition={{ delay: 0.6, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
-                >
-                  Nasze menu bankietowe przygotowywane jest przez doświadczonych
-                  szefów kuchni, którzy dbają o najwyższą jakość potraw i
-                  elegancką prezentację. Oferujemy również catering na zewnątrz.
                 </motion.p>
               </div>
 
@@ -348,19 +338,19 @@ const BusinessBanquets = ({
             >
               <AnimatedDecorativeBar />
 
-              <motion.h2
+              <motion.h1
                 variants={fadeInUp}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="!text-white text-5xl xl:text-5xl font-alata font-semibold uppercase tracking-wider mb-6 leading-tight"
+                className="title-dark"
               >
                 Biznes & Bankiety
-              </motion.h2>
+              </motion.h1>
 
               <div className="space-y-4">
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Hotel Avangarda*** to idealne miejsce na organizację wydarzeń
                   biznesowych najwyższej klasy. Nasze eleganckie sale
@@ -371,7 +361,7 @@ const BusinessBanquets = ({
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Oferujemy kompleksową obsługę konferencji, szkoleń,
                   prezentacji oraz uroczystych bankietów. Nasze doświadczenie i
@@ -381,22 +371,12 @@ const BusinessBanquets = ({
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Dysponujemy nowoczesnymi salami o różnej pojemności - od
                   kameralnych spotkań zarządu po duże konferencje dla 540 osób.
                   Każda sala wyposażona jest w profesjonalny sprzęt
                   audiowizualny, bezprzewodowy internet oraz klimatyzację.
-                </motion.p>
-
-                <motion.p
-                  variants={fadeInUp}
-                  transition={{ delay: 0.6, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
-                >
-                  Nasze menu bankietowe przygotowywane jest przez doświadczonych
-                  szefów kuchni, którzy dbają o najwyższą jakość potraw i
-                  elegancką prezentację. Oferujemy również catering na zewnątrz.
                 </motion.p>
               </div>
 

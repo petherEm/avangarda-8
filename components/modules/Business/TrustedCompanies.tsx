@@ -103,11 +103,9 @@ export default function TrustedCompanies({
         >
           <div className="flex flex-col items-center">
             <AnimatedDecorativeBar />
-            <h2 className="text-4xl font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6 mt-4">
-              Zaufali Nam
-            </h2>
+            <h1 className="title-light">Zaufali Nam</h1>
           </div>
-          <p className="text-lg leading-relaxed max-w-3xl mx-auto text-muted-foreground">
+          <p className="main-paragraph-light max-w-2xl mx-auto">
             Jesteśmy dumni z zaufania, jakim obdarzają nas renomowane firmy.
             Nasze doświadczenie w organizacji wydarzeń biznesowych sprawia, że
             jesteśmy pierwszym wyborem dla wymagających klientów.

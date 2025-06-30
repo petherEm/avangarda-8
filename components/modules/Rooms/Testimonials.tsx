@@ -94,10 +94,8 @@ const Testimonials = ({ lang = "pl", dict }: TestimonialsProps) => {
           {/* Left side - Text content */}
           <div className="lg:w-1/2">
             <AnimatedDecorativeBar className="w-20 h-2 bg-avangarda mb-6" />
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Co mówią nasi goście?
-            </h1>
-            <p className="text-xl text-gray-300 max-w-2xl">
+            <h1 className="title-dark capitalize">Co mówią nasi goście?</h1>
+            <p className="main-paragraph-dark max-w-lg">
               Poznaj opinie naszych gości i przekonaj się, dlaczego wybierają
               Hotel Avangarda
             </p>

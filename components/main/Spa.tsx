@@ -61,19 +61,19 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
             >
               <AnimatedDecorativeBar />
 
-              <motion.h2
+              <motion.h1
                 variants={fadeInUp}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="!text-white text-2xl sm:text-3xl md:text-4xl font-alata font-semibold uppercase tracking-wider mb-3 leading-tight"
+                className="title-dark"
               >
                 Wellness & SPA
-              </motion.h2>
+              </motion.h1>
 
               <div className="space-y-3 sm:space-y-4 md:space-y-5">
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Odkryj oazę spokoju w naszym SPA, gdzie ciało i umysł znajdują
                   pełne odprężenie. Hotel Avangarda oferuje wyjątkowe atrakcje
@@ -83,7 +83,7 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Nasze centrum SPA to miejsce, gdzie tradycyjne metody
                   relaksacji spotykają się z nowoczesnymi technikami wellness,
@@ -93,7 +93,7 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="text-sm sm:text-base md:text-lg leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Dla wszystkich Gości przygotowaliśmy basen rekreacyjny,
                   brodzik oraz jacuzzi. Dorośli mają do dyspozycji dwie sauny –
@@ -259,19 +259,19 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
             >
               <AnimatedDecorativeBar />
 
-              <motion.h2
+              <motion.h1
                 variants={fadeInUp}
                 transition={{ delay: 0.2, duration: 0.6 }}
-                className="!text-white text-4xl xl:text-5xl font-alata font-semibold uppercase tracking-wider mb-4 leading-tight"
+                className="title-dark"
               >
                 Wellness & SPA
-              </motion.h2>
+              </motion.h1>
 
               <div className="space-y-4">
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.3, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Odkryj oazę spokoju w naszym SPA, gdzie ciało i umysł znajdują
                   pełne odprężenie. Hotel Avangarda oferuje wyjątkowe atrakcje
@@ -281,7 +281,7 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.4, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Nasze centrum SPA to miejsce, gdzie tradycyjne metody
                   relaksacji spotykają się z nowoczesnymi technikami wellness,
@@ -291,7 +291,7 @@ const Spa = ({ lang = "pl", dict, className }: SpaProps) => {
                 <motion.p
                   variants={fadeInUp}
                   transition={{ delay: 0.5, duration: 0.6 }}
-                  className="text-lg max-w-2xl leading-relaxed text-white"
+                  className="main-paragraph-dark"
                 >
                   Dla wszystkich Gości przygotowaliśmy basen rekreacyjny,
                   brodzik oraz jacuzzi. Dorośli mają do dyspozycji dwie sauny –

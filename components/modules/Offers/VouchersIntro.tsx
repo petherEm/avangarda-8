@@ -28,9 +28,7 @@ const VouchersIntro: React.FC<VouchersIntroProps> = ({
             viewport={{ once: true }}
             className="mb-16"
           >
-            <h2 className="text-3xl font-semibold mb-12 text-center">
-              Podaruj Voucher
-            </h2>
+            <h2 className="subtitle-dark">Podaruj Voucher</h2>
 
             <VouchersGrid vouchers={vouchers} lang={lang} />
           </motion.div>

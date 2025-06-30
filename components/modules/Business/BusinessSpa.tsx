@@ -105,7 +105,7 @@ export default function BusinessSpa({ dict, lang = "pl" }: BusinessSpaProps) {
             <motion.h1
               variants={fadeInUp}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="uppercase text-4xl md:text-5xl lg:text-6xl font-semibold tracking-wider text-white leading-tight"
+              className="title-dark"
             >
               Biznes Spa
             </motion.h1>
@@ -113,7 +113,7 @@ export default function BusinessSpa({ dict, lang = "pl" }: BusinessSpaProps) {
               <motion.p
                 variants={fadeInUp}
                 transition={{ delay: 0.4, duration: 0.6 }}
-                className="text-lg md:text-xl text-white/90 leading-relaxed"
+                className="main-paragraph-dark"
               >
                 Nasza strefa Spa to oaza spokoju w sercu hotelu. Po męczącym
                 dniu konferencyjnym zapraszamy na relaksujące zabiegi, które
@@ -122,7 +122,7 @@ export default function BusinessSpa({ dict, lang = "pl" }: BusinessSpaProps) {
               <motion.p
                 variants={fadeInUp}
                 transition={{ delay: 0.5, duration: 0.6 }}
-                className="text-lg md:text-xl text-white/90 leading-relaxed"
+                className="main-paragraph-dark"
               >
                 Profesjonalni terapeuci zadbają o Twoje samopoczucie, oferując
                 szeroki wybór zabiegów dostosowanych do potrzeb gości
@@ -314,7 +314,7 @@ export default function BusinessSpa({ dict, lang = "pl" }: BusinessSpaProps) {
               <motion.p
                 variants={fadeInUp}
                 transition={{ delay: 0.3, duration: 0.6 }}
-                className="text-lg md:text-xl text-white/90 leading-relaxed"
+                className="main-paragraph-dark"
               >
                 Nasza strefa Spa to oaza spokoju w sercu hotelu. Po męczącym
                 dniu konferencyjnym zapraszamy na relaksujące zabiegi, które

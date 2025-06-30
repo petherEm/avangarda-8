@@ -40,18 +40,18 @@ const Weddings = ({ lang = "pl", dict }: WeddingsProps) => {
           viewport={{ once: false, amount: 0.3 }}
         >
           <AnimatedDecorativeBar />
-          <motion.h2
+          <motion.h1
             variants={fadeInUp}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="!text-white text-4xl max-w-2xl font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6"
+            className="title-dark"
           >
             Uroczystości na każdą okazję
-          </motion.h2>
+          </motion.h1>
           <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:gap-8">
             <motion.p
               variants={fadeInUp}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-base md:text-lg max-w-2xl leading-relaxed !text-white"
+              className="main-paragraph-dark"
             >
               Zorganizuj niezapomniane chwile w wyjątkowej atmosferze! Oferujemy
               profesjonalną obsługę i przestrzenie idealne na wesela, komunie,

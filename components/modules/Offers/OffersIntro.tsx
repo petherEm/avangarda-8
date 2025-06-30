@@ -31,9 +31,7 @@ const OffersIntro = ({ dict, lang, offers }: OffersIntroProps) => {
             viewport={{ once: true }}
             className="mb-16"
           >
-            <h2 className="text-3xl font-semibold mb-12 text-center">
-              {t("offers.browseTitle")}
-            </h2>
+            <h2 className="subtitle-light">{t("offers.browseTitle")}</h2>
 
             <OfferGrid offers={offers} lang={lang} />
           </motion.div>

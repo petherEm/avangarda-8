@@ -25,11 +25,10 @@ const Pakiety = async ({ params }: { params: Promise<{ lang: string }> }) => {
     <>
       <OffersHero />
 
-      <AnimateOnScroll>
-        <OffersIntro dict={dict} lang={lang} offers={offers} />
-        <VouchersIntro dict={dict} lang={lang} vouchers={vouchers} />
-        {/* Enhanced Call to action - updated with styling from GastroIntro */}
-      </AnimateOnScroll>
+      <OffersIntro dict={dict} lang={lang} offers={offers} />
+      <VouchersIntro dict={dict} lang={lang} vouchers={vouchers} />
+      {/* Enhanced Call to action - updated with styling from GastroIntro */}
+
       <GenericCTA
         header="Skontaktuj się z nami"
         leadText="Zadzwoń lub napisz do nas, aby dowiedzieć się więcej o naszej ofercie. Pomożemy Ci dobrać i zarezerwować pakiet bądź voucher."

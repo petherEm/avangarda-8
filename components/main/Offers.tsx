@@ -132,12 +132,8 @@ const Offers = ({ dict, lang, offers }: OffersProps) => {
               className="relative mb-6"
             >
               <AnimatedDecorativeBar />
-              <h2 className="text-3xl md:text-4xl font-alata font-semibold uppercase tracking-wider mb-4 relative">
-                {dict.offers.title}
-              </h2>
-              <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                {dict.offers.description}
-              </p>
+              <h1 className="title-light">{dict.offers.title}</h1>
+              <p className="main-paragraph-light">{dict.offers.description}</p>
             </motion.div>
 
             <motion.div
@@ -299,10 +295,8 @@ const Offers = ({ dict, lang, offers }: OffersProps) => {
                 className="relative mb-8"
               >
                 <AnimatedDecorativeBar />
-                <h2 className="text-4xl font-alata xl:text-5xl font-semibold uppercase tracking-wider mb-6 relative">
-                  {dict.offers.title}
-                </h2>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <h1 className="title-light">{dict.offers.title}</h1>
+                <p className="main-paragraph-light">
                   {dict.offers.description}
                 </p>
               </motion.div>

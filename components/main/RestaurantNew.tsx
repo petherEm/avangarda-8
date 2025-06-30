@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container } from "@/components/container";
 import { Button } from "@/components/ui/button";
-import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { AnimatedDecorativeBar } from "../animated-decorative-bar";
 
@@ -74,17 +73,17 @@ const RestaurantNew = ({ dict, lang }: RestaurantProps) => {
           {/* Right half - Text content with button below */}
           <div className="flex flex-col justify-center">
             <AnimatedDecorativeBar />
-            <motion.h2
+            <motion.h1
               variants={fadeInUp}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="text-4xl max-w-2xl font-alata md:text-5xl font-semibold uppercase tracking-wider mb-6"
+              className="title-light"
             >
               {dict.restaurants.title}
-            </motion.h2>
+            </motion.h1>
             <motion.p
               variants={fadeInUp}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-base md:text-lg max-w-2xl leading-relaxed text-primary mb-6"
+              className="main-paragraph-light"
             >
               {dict.restaurants.description}
             </motion.p>
