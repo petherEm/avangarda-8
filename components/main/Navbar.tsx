@@ -330,7 +330,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
               <div className="flex items-center justify-end gap-2 sm:gap-4 py-2">
                 <Button
                   size="sm"
-                  className="bg-transparent shadow-none font-alata px-2 text-xs text-white hover:text-avangarda sm:px-4 sm:text-sm transition-colors duration-300"
+                  className="bg-transparent font-alata px-2 text-xs text-white hover:text-avangarda sm:px-4 sm:text-sm transition-colors duration-300"
                 >
                   <Phone className="h-2 w-2 sm:h-3 sm:w-3" />
                   <span className="ml-1 text-[14px]">{dict.nav.phone}</span>
@@ -420,15 +420,21 @@ export function Navbar({ lang, dict }: NavbarProps) {
               {/* Right side buttons */}
               <div className="flex items-center gap-2">
                 <Button
-                  variant="fillRight"
-                  className="border-none font-alata px-4 py-2.5"
+                  size="sm"
+                  className="bg-avangarda font-alata px-3 py-2 text-xs text-white hover:bg-avangarda/90 sm:px-4 sm:text-sm transition-colors duration-300"
                 >
-                  <Phone className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="ml-2">{dict.nav.phone}</span>
+                  <Phone className="h-3 w-3 sm:h-4 sm:w-4" />
+                  <span className="ml-1 sm:ml-2">{dict.nav.phone}</span>
                 </Button>
 
-                <Link href={getLocalizedHref("/pakiety")}>
-                  <Button className="bg-avangarda font-alata px-3 py-2.5 text-sm text-white hover:bg-avangarda/90 xl:px-5 xl:text-base flex transition-colors duration-300">
+                <Link
+                  href={getLocalizedHref("/pakiety")}
+                  className="hidden sm:flex"
+                >
+                  <Button
+                    size="sm"
+                    className="bg-avangarda font-alata px-3 py-2.5 text-sm text-white hover:bg-avangarda/90 xl:px-5 xl:text-base flex transition-colors duration-300"
+                  >
                     <GiftIcon className="h-4 w-4 xl:h-5 xl:w-5" />
                     <span className="hidden sm:inline xl:inline ml-2">
                       Kup Voucher
