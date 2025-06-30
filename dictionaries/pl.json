@@ -144,6 +144,15 @@
       "viewAll": "Zobacz wszystkie"
     },
     "amenitiesTitle": "Udogodnienia:",
+    "whatsIncluded": {
+      "title": "Co jest wliczone",
+      "dailyHousekeeping": "Codzienna obsługa pokoju",
+      "roomService24": "Obsługa pokoju 24/7",
+      "welcomeAmenities": "Powitalne udogodnienia",
+      "qualityLinens": "Wysokiej jakości pościel",
+      "toiletries": "Przybory łazienkowe",
+      "roomSafe": "Sejf w pokoju"
+    },
     "details": "Szczegóły",
     "bookNow": "Rezerwuj teraz"
   },

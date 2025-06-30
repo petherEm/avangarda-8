@@ -144,7 +144,16 @@
       "of": "of",
       "viewAll": "View all"
     },
-    "amenities": "Amenities:",
+    "amenitiesTitle": "Amenities:",
+    "whatsIncluded": {
+      "title": "What's included",
+      "dailyHousekeeping": "Daily housekeeping",
+      "roomService24": "24/7 room service",
+      "welcomeAmenities": "Welcome amenities",
+      "qualityLinens": "High-quality linens",
+      "toiletries": "Bathroom amenities",
+      "roomSafe": "In-room safe"
+    },
     "details": "Details",
     "bookNow": "Book now"
   },

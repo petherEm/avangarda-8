@@ -389,9 +389,11 @@ function ModernRoomCard({
           </p>
 
           <div className="flex flex-col gap-3">
-            <Button variant="fillRight" className="w-full">
-              Szczegóły
-            </Button>
+            <Link href={`/${lang}/hotel/${room.id}`}>
+              <Button variant="fillRight" className="w-full">
+                Szczegóły
+              </Button>
+            </Link>
             <Link
               href={`tel:${phoneNumber.replace(/\s+/g, "")}`}
               onClick={(e) => e.stopPropagation()}
