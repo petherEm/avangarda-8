@@ -21,7 +21,6 @@ export default async function BusinessMainPageAlt({
 
   return (
     <>
-      {/* <HeroImage image="/gallery-images/gal-06.png" title={title} /> */}
       <BusinessHero />
       <BusinessIntro dict={dict} lang={lang} />
       <BusinessBanquets dict={dict} lang={lang} />
